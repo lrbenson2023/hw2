@@ -1,0 +1,7 @@
+guest1	password
+guest2	password
+guest3	password
+guest4	password
+guest5	password
+guest6	password
+guest7	password7

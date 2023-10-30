@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+
+<script type ="text/javascript">
+function validateForm() {
+  let x = document.forms["myForm"]["username"].value;
+  let y = document.forms["myForm"]["password"].value;
+    if(x == "" || y == "") {
+    alert("Username and password must be filled in");
+    return false;
+  }
+}
+</script>
+
+</head>
+
+<body>
+
+<h1>Hello {{ dataToRender }}!</h1>
+
+
+<h1>Welcome to the TECH136 blog by LAM
+<span style='float:right;'>
+New Users: Please Signup
+<form name = "myForm2" action = "signup_action" method = "post" >
+<input type = "submit" value = "Signup" style="height:60px; width:120px; font-size: 30px;
+color: white; background: crimson;  float: right;" >
+</form>
+</h1>
+<br>
+
+<form name = "myForm" action = "login_action" method = "post" onsubmit = "return validateForm()">
+Account:
+<input type = "text" name = "username" value = "" "position:relative; right 10;" >
+<br>
+Password:
+<input type = "text" name = "password" value = "" "position:relative; right 5;">
+<br>
+<input type = "submit" value = "Submit" >
+</form>
+
+</body> 

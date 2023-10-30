@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+
+<script type ="text/javascript">
+function validateForm() {
+  let x = document.forms["myForm2"]["user"].value;
+  let y = document.forms["myForm2"]["psword"].value;
+    if(x == "" || y == "") {
+    alert("Username and password must be filled in");
+    return false;
+  }
+}
+</script>
+</head>
+<body>
+    <h1>Signup for our Blog!
+<form name = "myForm2" action = "get_info" method = "post" onsubmit = "return validateForm()" >
+Please Enter your Username:
+<input type = "text" name = "user" value = "" >
+<br>
+Please Enter your Password:
+<input type = "text" name = "psword" value = "" >
+<br>
+<input type = "submit" value = "Submit" >
+</h1>
+</form>
+</body> 
